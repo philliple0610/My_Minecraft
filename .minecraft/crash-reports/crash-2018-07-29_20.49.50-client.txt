@@ -1,0 +1,91 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 7/29/18 8:49 PM
+Description: Rendering Block Entity
+
+java.lang.IllegalArgumentException: Cannot get property blv{name=facing, clazz=class ep, values=[north, south, west, east]} as it does not exist in Block{minecraft:ice}
+	at bkr.c(SourceFile:95)
+	at cvr.a(SourceFile:71)
+	at cvp.a(SourceFile:148)
+	at cvp.a(SourceFile:128)
+	at ctt.a(SourceFile:694)
+	at ctn.b(SourceFile:963)
+	at ctn.a(SourceFile:872)
+	at ctn.a(SourceFile:749)
+	at cfi.c(SourceFile:847)
+	at cfi.a(SourceFile:392)
+	at net.minecraft.client.main.Main.main(SourceFile:144)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at bkr.c(SourceFile:95)
+	at cvr.a(SourceFile:71)
+
+-- Block Entity Details --
+Details:
+	Name: minecraft:ender_chest // bjk
+	Block: Block{minecraft:ice}
+	Block location: World: (-2545,53,736), Chunk: (at 15,3,0 in -160,46; contains blocks -2560,0,736 to -2545,255,751), Region: (-5,1; contains chunks -160,32 to -129,63, blocks -2560,0,512 to -2049,255,1023)
+	Block: Block{minecraft:ice}
+	Block location: World: (-2545,53,736), Chunk: (at 15,3,0 in -160,46; contains blocks -2560,0,736 to -2545,255,751), Region: (-5,1; contains chunks -160,32 to -129,63, blocks -2560,0,512 to -2049,255,1023)
+Stacktrace:
+	at cvp.a(SourceFile:148)
+	at cvp.a(SourceFile:128)
+	at ctt.a(SourceFile:694)
+	at ctn.b(SourceFile:963)
+	at ctn.a(SourceFile:872)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 20 total; [csy['Th8t_Random_Guy'/1499886, l='MpServer', x=-2532.09, y=53.18, z=718.79], csz['u1xr66t056'/33, l='MpServer', x=-2529.50, y=54.50, z=735.50], csz['e3by1911w1'/35, l='MpServer', x=-2536.50, y=54.00, z=734.50], csz['nh3x5wp78b'/43, l='MpServer', x=-2530.50, y=54.50, z=732.50], csz['5ul3j47dlv'/47, l='MpServer', x=-2532.50, y=54.50, z=730.50], csz['t6f53rj6ei'/41, l='MpServer', x=-2532.50, y=54.00, z=739.50], csz['7y2o6990cm'/49, l='MpServer', x=-2532.50, y=54.00, z=749.50], csz['kbkdc5myyp'/53, l='MpServer', x=-2534.50, y=54.00, z=736.50], csz['hhg7pe988d'/59, l='MpServer', x=-2531.50, y=54.00, z=742.50], csz['ffkl7n91a5'/61, l='MpServer', x=-2531.50, y=54.00, z=746.50], csz['64qps9qp6v'/31, l='MpServer', x=-2536.50, y=54.00, z=754.50], csz['0jl9tf2g8q'/39, l='MpServer', x=-2529.50, y=54.50, z=753.50], csz['v3g8l05bw2'/45, l='MpServer', x=-2530.50, y=54.50, z=756.50], csz['00lmbw2qu7'/51, l='MpServer', x=-2534.50, y=54.00, z=752.50], csz['u86cwe8b8t'/57, l='MpServer', x=-2532.50, y=54.50, z=758.50], csz['bq8t2t3tmz'/37, l='MpServer', x=-2528.50, y=54.50, z=750.50], csz['t67vfawv2e'/55, l='MpServer', x=-2528.50, y=54.50, z=738.50], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2550.72, y=52.00, z=721.44], csz['th8t_random_noob'/1555120, l='MpServer', x=-2525.31, y=66.00, z=706.72]]
+	Chunk stats: MultiplayerChunkCache: 169, 169
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: {}
+	Level spawn location: World: (-2562,54,743), Chunk: (at 14,3,7 in -161,46; contains blocks -2576,0,736 to -2561,255,751), Region: (-6,1; contains chunks -192,32 to -161,63, blocks -3072,0,512 to -2561,255,1023)
+	Level time: 1224017932 game time, 111000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 195 total; [alv['Armor Stand'/0, l='MpServer', x=-2561.88, y=52.00, z=732.66], alv['Armor Stand'/1, l='MpServer', x=-2564.31, y=52.00, z=734.59], alv['Armor Stand'/2, l='MpServer', x=-2560.91, y=54.00, z=742.25], alv['Armor Stand'/3, l='MpServer', x=-2540.28, y=53.00, z=738.50], alv[''/6, l='MpServer', x=-2548.50, y=55.00, z=715.50], alv[''/8, l='MpServer', x=-2548.50, y=54.53, z=715.50], alv[''/10, l='MpServer', x=-2548.50, y=54.16, z=715.50], alv[''/12, l='MpServer', x=-2548.50, y=53.78, z=715.50], alv[''/14, l='MpServer', x=-2548.50, y=53.44, z=715.50], alv[''/16, l='MpServer', x=-2548.50, y=53.06, z=715.50], alv[''/18, l='MpServer', x=-2548.50, y=52.69, z=715.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2529.46, y=72.70, z=752.43], alv[''/20, l='MpServer', x=-2548.50, y=52.31, z=715.50], alv[''/22, l='MpServer', x=-2548.50, y=51.94, z=715.50], alv[''/24, l='MpServer', x=-2548.50, y=51.56, z=715.50], alv[''/26, l='MpServer', x=-2548.50, y=51.22, z=715.50], alv[''/28, l='MpServer', x=-2548.50, y=50.75, z=715.50], csy['Th8t_Random_Guy'/1499886, l='MpServer', x=-2532.09, y=53.18, z=718.79], alv[''/30, l='MpServer', x=-2548.50, y=50.38, z=715.50], csz['64qps9qp6v'/31, l='MpServer', x=-2536.50, y=54.00, z=754.50], alv[''/32, l='MpServer', x=-2536.50, y=54.00, z=754.50], csz['u1xr66t056'/33, l='MpServer', x=-2529.50, y=54.50, z=735.50], alv[''/34, l='MpServer', x=-2529.50, y=54.50, z=735.50], csz['e3by1911w1'/35, l='MpServer', x=-2536.50, y=54.00, z=734.50], alv[''/36, l='MpServer', x=-2536.50, y=54.00, z=734.50], csz['snookerhi'/1575074, l='MpServer', x=-2535.62, y=53.00, z=742.31], csz['bq8t2t3tmz'/37, l='MpServer', x=-2528.50, y=54.50, z=750.50], csz['Techerman'/1574321, l='MpServer', x=-2541.94, y=52.50, z=744.00], alv[''/38, l='MpServer', x=-2528.50, y=54.50, z=750.50], csz['MuhannadGAMESYT'/1574305, l='MpServer', x=-2533.88, y=53.00, z=744.25], csz['0jl9tf2g8q'/39, l='MpServer', x=-2529.50, y=54.50, z=753.50], csz['Reidenger'/1574512, l='MpServer', x=-2563.44, y=54.00, z=744.31], alv[''/40, l='MpServer', x=-2529.50, y=54.50, z=753.50], csz['WHYALLWAYSME'/1573532, l='MpServer', x=-2563.16, y=54.00, z=745.88], csz['t6f53rj6ei'/41, l='MpServer', x=-2532.50, y=54.00, z=739.50], csz['OriginaliTEA'/1572492, l='MpServer', x=-2562.38, y=54.00, z=744.34], alv[''/42, l='MpServer', x=-2532.50, y=54.00, z=739.50], csz['ArborGold'/1574609, l='MpServer', x=-2563.53, y=54.00, z=745.06], csz['nh3x5wp78b'/43, l='MpServer', x=-2530.50, y=54.50, z=732.50], csz['Neon_Shep'/1574607, l='MpServer', x=-2561.94, y=54.00, z=745.91], alv[''/44, l='MpServer', x=-2530.50, y=54.50, z=732.50], csz['epicprokid14'/1574886, l='MpServer', x=-2562.88, y=54.00, z=743.66], csz['v3g8l05bw2'/45, l='MpServer', x=-2530.50, y=54.50, z=756.50], csz['DownBad'/1574980, l='MpServer', x=-2560.00, y=54.00, z=745.84], csz['5ul3j47dlv'/47, l='MpServer', x=-2532.50, y=54.50, z=730.50], alv[''/48, l='MpServer', x=-2532.50, y=54.50, z=730.50], csz['7y2o6990cm'/49, l='MpServer', x=-2532.50, y=54.00, z=749.50], csz['JosemiAb'/1567438, l='MpServer', x=-2552.56, y=52.00, z=736.34], alv[''/50, l='MpServer', x=-2532.50, y=54.00, z=749.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2547.63, y=52.00, z=745.41], csz['00lmbw2qu7'/51, l='MpServer', x=-2534.50, y=54.00, z=752.50], alv[''/52, l='MpServer', x=-2534.50, y=54.00, z=752.50], csz['Grobulous11'/1574794, l='MpServer', x=-2552.63, y=52.06, z=744.25], csz['kbkdc5myyp'/53, l='MpServer', x=-2534.50, y=54.00, z=736.50], alv[''/54, l='MpServer', x=-2534.50, y=54.00, z=736.50], csz['t67vfawv2e'/55, l='MpServer', x=-2528.50, y=54.50, z=738.50], alv[''/56, l='MpServer', x=-2528.50, y=54.50, z=738.50], csz['u86cwe8b8t'/57, l='MpServer', x=-2532.50, y=54.50, z=758.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.50, y=82.00, z=748.53], csz['Rhonin20'/1574420, l='MpServer', x=-2541.72, y=53.20, z=756.28], csz['hhg7pe988d'/59, l='MpServer', x=-2531.50, y=54.00, z=742.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2546.53, y=52.00, z=754.00], alv[''/60, l='MpServer', x=-2531.50, y=54.00, z=742.50], csz['ffkl7n91a5'/61, l='MpServer', x=-2531.50, y=54.00, z=746.50], alv[''/62, l='MpServer', x=-2531.50, y=54.00, z=746.50], csz['Silvercat75'/1569859, l='MpServer', x=-2534.50, y=53.06, z=738.16], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], alv[''/68, l='MpServer', x=-2644.50, y=52.00, z=740.50], alv[''/74, l='MpServer', x=-2646.50, y=37.00, z=713.50], alv[''/76, l='MpServer', x=-2636.50, y=53.00, z=696.50], csz['u1xr66t056'/33, l='MpServer', x=-2529.50, y=54.50, z=735.50], csz['e3by1911w1'/35, l='MpServer', x=-2536.50, y=54.00, z=734.50], csz['nh3x5wp78b'/43, l='MpServer', x=-2530.50, y=54.50, z=732.50], csz['5ul3j47dlv'/47, l='MpServer', x=-2532.50, y=54.50, z=730.50], aji['Bat'/613983, l='MpServer', x=-2547.34, y=53.78, z=740.59], alv['Armor Stand'/1584760, l='MpServer', x=-2551.50, y=52.56, z=735.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.50, y=82.00, z=748.53], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2521.45, y=78.52, z=752.33], csz['Tachyon_Eddy'/1574289, l='MpServer', x=-2537.44, y=53.00, z=738.03], csz['keops123'/1547203, l='MpServer', x=-2541.00, y=53.06, z=737.53], csz['t6f53rj6ei'/41, l='MpServer', x=-2532.50, y=54.00, z=739.50], csz['7y2o6990cm'/49, l='MpServer', x=-2532.50, y=54.00, z=749.50], csz['kbkdc5myyp'/53, l='MpServer', x=-2534.50, y=54.00, z=736.50], csz['hhg7pe988d'/59, l='MpServer', x=-2531.50, y=54.00, z=742.50], csz['ffkl7n91a5'/61, l='MpServer', x=-2531.50, y=54.00, z=746.50], anx['Villager'/119, l='MpServer', x=-2551.50, y=52.00, z=753.50], alv[''/120, l='MpServer', x=-2551.50, y=52.16, z=753.50], alv[''/121, l='MpServer', x=-2551.50, y=52.47, z=753.50], csz['64qps9qp6v'/31, l='MpServer', x=-2536.50, y=54.00, z=754.50], alv[''/122, l='MpServer', x=-2544.50, y=52.38, z=736.50], csz['0jl9tf2g8q'/39, l='MpServer', x=-2529.50, y=54.50, z=753.50], alv[''/123, l='MpServer', x=-2544.50, y=52.09, z=736.50], csz['v3g8l05bw2'/45, l='MpServer', x=-2530.50, y=54.50, z=756.50], alv[''/124, l='MpServer', x=-2544.50, y=52.38, z=752.50], csz['00lmbw2qu7'/51, l='MpServer', x=-2534.50, y=54.00, z=752.50], alv[''/125, l='MpServer', x=-2544.50, y=52.09, z=752.50], csz['u86cwe8b8t'/57, l='MpServer', x=-2532.50, y=54.50, z=758.50], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], alv[''/128, l='MpServer', x=-2551.50, y=51.97, z=735.50], alv[''/129, l='MpServer', x=-2551.50, y=52.25, z=735.50], aji['Bat'/912015, l='MpServer', x=-2548.50, y=55.97, z=734.09], csz['bq8t2t3tmz'/37, l='MpServer', x=-2528.50, y=54.50, z=750.50], csz['t67vfawv2e'/55, l='MpServer', x=-2528.50, y=54.50, z=738.50], alv[''/132, l='MpServer', x=-2532.50, y=55.19, z=730.50], alv[''/133, l='MpServer', x=-2532.50, y=54.81, z=730.50], alv[''/134, l='MpServer', x=-2534.50, y=54.69, z=736.50], alv['Armor Stand'/1071766, l='MpServer', x=-2533.28, y=53.50, z=734.09], alv[''/135, l='MpServer', x=-2534.50, y=54.31, z=736.50], alv[''/136, l='MpServer', x=-2530.50, y=55.19, z=732.50], alv[''/137, l='MpServer', x=-2530.50, y=54.81, z=732.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2514.53, y=87.29, z=749.39], alv[''/140, l='MpServer', x=-2532.50, y=54.69, z=739.50], alv[''/141, l='MpServer', x=-2532.50, y=54.31, z=739.50], alv[''/142, l='MpServer', x=-2532.50, y=54.69, z=749.50], alv[''/143, l='MpServer', x=-2532.50, y=54.31, z=749.50], csz['gaboulz'/1572186, l='MpServer', x=-2535.03, y=53.53, z=750.53], alv[''/146, l='MpServer', x=-2531.50, y=55.03, z=742.50], alv[''/147, l='MpServer', x=-2531.50, y=54.69, z=742.50], alv[''/148, l='MpServer', x=-2531.50, y=54.31, z=742.50], alv[''/149, l='MpServer', x=-2531.50, y=55.03, z=746.50], alv[''/150, l='MpServer', x=-2531.50, y=54.69, z=746.50], alv[''/151, l='MpServer', x=-2531.50, y=54.31, z=746.50], alv[''/152, l='MpServer', x=-2529.50, y=55.19, z=753.50], alv[''/153, l='MpServer', x=-2529.50, y=54.81, z=753.50], alv[''/154, l='MpServer', x=-2534.50, y=54.69, z=752.50], alv[''/155, l='MpServer', x=-2534.50, y=54.31, z=752.50], alv[''/156, l='MpServer', x=-2528.50, y=55.19, z=738.50], alv[''/157, l='MpServer', x=-2528.50, y=54.81, z=738.50], alv[''/158, l='MpServer', x=-2536.50, y=54.69, z=754.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.50, y=82.00, z=748.53], alv[''/159, l='MpServer', x=-2536.50, y=54.31, z=754.50], alv[''/160, l='MpServer', x=-2529.50, y=55.19, z=735.50], csz['sockney'/1575263, l='MpServer', x=-2548.22, y=53.28, z=742.78], alv[''/161, l='MpServer', x=-2529.50, y=54.81, z=735.50], alv[''/162, l='MpServer', x=-2536.50, y=54.69, z=734.50], alv[''/163, l='MpServer', x=-2536.50, y=54.31, z=734.50], alv[''/164, l='MpServer', x=-2528.50, y=55.19, z=750.50], alv[''/165, l='MpServer', x=-2528.50, y=54.81, z=750.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2525.31, y=66.00, z=706.72], csz['AscendedFlame'/1575270, l='MpServer', x=-2552.51, y=54.00, z=746.12], aji['Bat'/168, l='MpServer', x=-2551.50, y=53.35, z=735.50], csz['Madds_06'/1571696, l='MpServer', x=-2605.73, y=53.20, z=728.75], csz['xDhavid'/1575274, l='MpServer', x=-2559.70, y=54.00, z=744.94], alv[''/1575080, l='MpServer', x=-2544.50, y=52.69, z=736.50], alv[''/1575081, l='MpServer', x=-2544.50, y=52.69, z=752.50], csz['Asiiixxx'/1496486, l='MpServer', x=-2607.00, y=53.00, z=728.53], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.50, y=82.00, z=748.53], alv[''/1575077, l='MpServer', x=-2551.50, y=52.56, z=735.50], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], alv['Armor Stand'/1584856, l='MpServer', x=-2551.50, y=52.56, z=735.50], alv['Armor Stand'/1584857, l='MpServer', x=-2544.50, y=52.69, z=736.50], alv['Armor Stand'/1584860, l='MpServer', x=-2551.50, y=52.56, z=735.50], alv['Armor Stand'/1584861, l='MpServer', x=-2544.50, y=52.69, z=736.50], csz['FertileHornet'/1575474, l='MpServer', x=-2563.91, y=54.00, z=744.06], csz['Reidenger'/1574512, l='MpServer', x=-2563.44, y=54.00, z=744.31], csz['WHYALLWAYSME'/1573532, l='MpServer', x=-2563.16, y=54.00, z=745.88], csz['ArborGold'/1574609, l='MpServer', x=-2563.53, y=54.00, z=745.06], csz['JoynerLucas'/1575476, l='MpServer', x=-2538.52, y=55.05, z=742.90], csz['Kendrick000'/1575470, l='MpServer', x=-2559.20, y=54.00, z=744.50], csz['LexonZeroz'/1575498, l='MpServer', x=-2558.69, y=54.00, z=745.00], csz['Neon_Shep'/1574607, l='MpServer', x=-2561.94, y=54.00, z=745.91], csz['VirtualVorian'/1575670, l='MpServer', x=-2561.66, y=54.00, z=744.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.44, y=83.16, z=746.31], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['xDhavid'/1575274, l='MpServer', x=-2550.75, y=52.06, z=740.09], csz['JosemiAb'/1567438, l='MpServer', x=-2552.56, y=52.00, z=736.34], csz['Grobulous11'/1574794, l='MpServer', x=-2552.63, y=52.06, z=744.25], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2572.38, y=56.46, z=736.83], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2550.72, y=52.00, z=721.44], csz['mugigadduk'/1575764, l='MpServer', x=-2562.84, y=54.00, z=744.78], csz['ThatOneGirlEmily'/1575766, l='MpServer', x=-2561.81, y=54.00, z=743.22], alv['Armor Stand'/1584865, l='MpServer', x=-2551.50, y=52.56, z=735.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2550.72, y=52.00, z=721.44], aji['Bat'/879882, l='MpServer', x=-2531.44, y=55.78, z=742.53], csz['th8t_random_noob'/1555120, l='MpServer', x=-2528.26, y=54.06, z=749.44], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2510.14, y=67.00, z=765.31], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2517.66, y=68.00, z=751.25], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2536.96, y=107.22, z=750.60], csz['th8t_random_noob'/1555120, l='MpServer', x=-2525.31, y=66.00, z=706.72], alv['Armor Stand'/1584956, l='MpServer', x=-2544.50, y=52.69, z=736.50], alv['Armor Stand'/1584959, l='MpServer', x=-2551.50, y=52.56, z=735.50], aji['Bat'/614201, l='MpServer', x=-2546.38, y=53.78, z=739.78], csz['th8t_random_noob'/1555120, l='MpServer', x=-2569.66, y=57.03, z=784.69], alv['Armor Stand'/1584990, l='MpServer', x=-2551.50, y=52.56, z=735.50], alv['Armor Stand'/1584991, l='MpServer', x=-2544.50, y=52.69, z=736.50], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['th8t_random_noob'/1555120, l='MpServer', x=-2524.50, y=67.00, z=743.44], csz['th8t_random_noob'/1555120, l='MpServer', x=-2524.72, y=67.00, z=738.53], ajn['Chicken'/1584995, l='MpServer', x=-2550.75, y=53.59, z=721.41], csz['35yv390037'/126, l='MpServer', x=-2551.50, y=52.00, z=735.50], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2552.72, y=53.25, z=739.94], csz['Xx1NoobSlayer1xX'/1571600, l='MpServer', x=-2553.88, y=54.69, z=760.16], csz['th8t_random_noob'/1555120, l='MpServer', x=-2520.50, y=82.00, z=748.53]]
+	Retry entities: 2 total; [alv[''/68, l='MpServer', x=-2644.50, y=52.00, z=740.50], alv[''/74, l='MpServer', x=-2646.50, y=37.00, z=713.50]]
+	Server brand: vanilla
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at cqv.a(SourceFile:427)
+	at cfi.b(SourceFile:1811)
+	at cfi.a(SourceFile:400)
+	at net.minecraft.client.main.Main.main(SourceFile:144)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.13
+	Operating System: Linux (amd64) version 4.15.3-300.fc27.x86_64
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 274857312 bytes (262 MB) / 569462784 bytes (543 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 5 total; -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	Launched Version: 1.13
+	LWJGL: 3.1.6 build 14
+	OpenGL: Mesa DRI Intel(R) Ivybridge Mobile  GL version 3.0 Mesa 17.3.4, Intel Open Source Technology Center
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Probably not. Jar signature remains and client brand is untouched.
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz

@@ -1,0 +1,103 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 7/20/18 10:34 PM
+Description: Tesselating block model
+
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at aye.b(SourceFile:290)
+	at aye.b(SourceFile:92)
+	at bcj.a(SourceFile:413)
+	at bkt.a(SourceFile:137)
+	at cul.b(SourceFile:364)
+	at cul.a(SourceFile:31)
+	at cul$b.a(SourceFile:392)
+	at cul.a(SourceFile:129)
+	at cul.b(SourceFile:74)
+	at cul.a(SourceFile:45)
+	at cuj.a(SourceFile:60)
+	at cwj.b(SourceFile:203)
+	at cwf.a(SourceFile:100)
+	at cwf.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at aye.b(SourceFile:290)
+	at aye.b(SourceFile:92)
+	at bcj.a(SourceFile:413)
+	at bkt.a(SourceFile:137)
+	at cul.b(SourceFile:364)
+	at cul.a(SourceFile:31)
+	at cul$b.a(SourceFile:392)
+	at cul.a(SourceFile:129)
+	at cul.b(SourceFile:74)
+
+-- Block model being tesselated --
+Details:
+	Block: Block{minecraft:stone}
+	Block location: World: (-17,59,16), Chunk: (at 15,3,0 in -2,1; contains blocks -32,0,16 to -17,255,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Using AO: true
+Stacktrace:
+	at cul.a(SourceFile:45)
+
+-- Block being tesselated --
+Details:
+	Block: Block{minecraft:stone}
+	Block location: World: (-17,59,16), Chunk: (at 15,3,0 in -2,1; contains blocks -32,0,16 to -17,255,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at cuj.a(SourceFile:60)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 19 total; [csy['Th8t_Random_Guy'/1134709, l='MpServer', x=2.06, y=69.12, z=-10.70], csz['burnie0118'/535, l='MpServer', x=-3.69, y=81.00, z=1.16], csz['Lion_Brine_Ninja'/537, l='MpServer', x=-13.38, y=64.91, z=-5.88], csz['iWolf_ShadOw'/538, l='MpServer', x=-17.10, y=76.94, z=-35.73], csz['royalnight3'/539, l='MpServer', x=44.03, y=70.00, z=10.31], csz['PePe7u7r'/540, l='MpServer', x=-20.13, y=78.00, z=-22.83], csz['QKuroiNekoQ'/541, l='MpServer', x=40.82, y=66.00, z=-2.39], csz['Mishana7u7_'/542, l='MpServer', x=-19.50, y=77.00, z=-35.69], csz['MasterGaming14'/545, l='MpServer', x=37.67, y=63.86, z=12.15], csz['SuzieTwinkle'/546, l='MpServer', x=44.08, y=68.00, z=5.01], csz['th8t_random_noob'/548, l='MpServer', x=-22.66, y=69.00, z=-13.81], csz['TerrorCP'/550, l='MpServer', x=12.88, y=66.97, z=16.44], csz['lich86'/551, l='MpServer', x=30.03, y=70.17, z=-26.06], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], csz['38m3yx804h'/920, l='MpServer', x=13.25, y=63.00, z=-13.16], csz['7197t115z6'/926, l='MpServer', x=1.56, y=69.00, z=-9.91], csz['ItsPeter_'/543, l='MpServer', x=-17.31, y=75.50, z=-35.56], csz['killergirl101'/544, l='MpServer', x=49.97, y=71.13, z=2.88], csz['54wvt49kar'/927, l='MpServer', x=4.47, y=70.00, z=-7.56]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: {}
+	Level spawn location: World: (-938,64,-148), Chunk: (at 6,4,12 in -59,-10; contains blocks -944,0,-160 to -929,255,-145), Region: (-2,-1; contains chunks -64,-32 to -33,-1, blocks -1024,0,-512 to -513,255,-1)
+	Level time: 29495322 game time, 1 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 131 total; [ama['Painting'/23, l='MpServer', x=-51.97, y=94.50, z=5.50], ama['Painting'/24, l='MpServer', x=-51.97, y=94.50, z=7.50], ama['Painting'/25, l='MpServer', x=-51.97, y=94.50, z=6.50], ama['Painting'/26, l='MpServer', x=-51.97, y=95.50, z=7.00], ama['Painting'/27, l='MpServer', x=-51.97, y=95.50, z=5.50], ama['Painting'/28, l='MpServer', x=-51.97, y=96.50, z=7.00], ama['Painting'/29, l='MpServer', x=-51.97, y=96.50, z=5.50], ama['Painting'/30, l='MpServer', x=-48.50, y=97.00, z=10.97], alx['Item Frame'/31, l='MpServer', x=-33.50, y=71.50, z=-16.97], anx['Villager'/32, l='MpServer', x=-33.31, y=69.00, z=-18.69], csz['killergirl101'/544, l='MpServer', x=49.97, y=71.13, z=2.88], ama['Painting'/33, l='MpServer', x=-48.00, y=94.00, z=2.03], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], ama['Painting'/34, l='MpServer', x=-46.50, y=93.50, z=2.03], ama['Painting'/35, l='MpServer', x=-46.50, y=94.50, z=2.03], ama['Painting'/36, l='MpServer', x=-47.00, y=97.00, z=10.97], alx['Item Frame'/37, l='MpServer', x=-0.97, y=84.50, z=33.50], anx['Villager'/38, l='MpServer', x=-2.50, y=82.00, z=33.50], ama['Painting'/39, l='MpServer', x=5.50, y=70.50, z=-34.03], ama['Painting'/40, l='MpServer', x=5.50, y=71.50, z=-34.03], ama['Painting'/41, l='MpServer', x=7.50, y=70.50, z=-34.03], ama['Painting'/42, l='MpServer', x=7.50, y=71.50, z=-34.03], ama['Painting'/43, l='MpServer', x=15.97, y=71.00, z=31.00], ama['Painting'/44, l='MpServer', x=15.97, y=78.50, z=31.00], ami['Gold Ingot'/818, l='MpServer', x=-5.88, y=69.00, z=5.38], csz['uyuoh'/547, l='MpServer', x=30.13, y=72.97, z=7.13], ami['Gold Ingot'/829, l='MpServer', x=-46.69, y=72.06, z=-16.06], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], ami['Gold Ingot'/856, l='MpServer', x=-16.06, y=69.00, z=22.88], ami['Gold Ingot'/857, l='MpServer', x=9.19, y=63.48, z=-16.63], ami['Gold Ingot'/862, l='MpServer', x=-0.97, y=69.00, z=1.63], ami['Gold Ingot'/880, l='MpServer', x=29.13, y=69.00, z=-35.72], ami['Gold Ingot'/885, l='MpServer', x=8.66, y=69.00, z=38.16], ami['Gold Ingot'/893, l='MpServer', x=-20.88, y=69.00, z=-33.72], ami['Gold Ingot'/896, l='MpServer', x=-5.41, y=70.00, z=-38.19], ami['Gold Ingot'/903, l='MpServer', x=-17.88, y=63.48, z=-1.91], ami['Gold Ingot'/904, l='MpServer', x=-17.41, y=75.50, z=-25.28], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], ami['Gold Ingot'/913, l='MpServer', x=32.81, y=62.35, z=0.78], ami['Gold Ingot'/914, l='MpServer', x=13.59, y=69.06, z=44.88], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], csz['38m3yx804h'/920, l='MpServer', x=13.25, y=63.00, z=-13.16], ami['Gold Ingot'/923, l='MpServer', x=5.63, y=69.00, z=-36.19], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], ami['Gold Ingot'/924, l='MpServer', x=5.66, y=75.00, z=-29.38], csz['7197t115z6'/926, l='MpServer', x=1.56, y=69.00, z=-9.91], csz['54wvt49kar'/927, l='MpServer', x=4.47, y=70.00, z=-7.56], csy['Th8t_Random_Guy'/1134709, l='MpServer', x=8.50, y=65.00, z=8.50], csy['Th8t_Random_Guy'/1134709, l='MpServer', x=2.06, y=69.12, z=-10.70], csz['burnie0118'/535, l='MpServer', x=-44.25, y=92.00, z=4.03], csz['t5m1oq3eh4'/675, l='MpServer', x=42.69, y=63.00, z=1.78], csz['Lion_Brine_Ninja'/537, l='MpServer', x=-46.75, y=81.06, z=15.69], ama['Painting'/33, l='MpServer', x=-48.00, y=94.00, z=2.03], ama['Painting'/34, l='MpServer', x=-46.50, y=93.50, z=2.03], ama['Painting'/35, l='MpServer', x=-46.50, y=94.50, z=2.03], ama['Painting'/36, l='MpServer', x=-47.00, y=97.00, z=10.97], ama['Painting'/23, l='MpServer', x=-51.97, y=94.50, z=5.50], ama['Painting'/24, l='MpServer', x=-51.97, y=94.50, z=7.50], csz['TeresaApocalypse'/536, l='MpServer', x=-46.50, y=92.00, z=10.59], ama['Painting'/25, l='MpServer', x=-51.97, y=94.50, z=6.50], ama['Painting'/26, l='MpServer', x=-51.97, y=95.50, z=7.00], ami['Gold Ingot'/941, l='MpServer', x=-3.97, y=69.00, z=-14.03], csz['iWolf_ShadOw'/538, l='MpServer', x=-47.38, y=90.47, z=13.36], ama['Painting'/27, l='MpServer', x=-51.97, y=95.50, z=5.50], csz['38m3yx804h'/920, l='MpServer', x=13.25, y=63.00, z=-13.16], csz['royalnight3'/539, l='MpServer', x=-44.31, y=84.12, z=20.50], ama['Painting'/28, l='MpServer', x=-51.97, y=96.50, z=7.00], csz['PePe7u7r'/540, l='MpServer', x=-51.69, y=92.00, z=9.69], ama['Painting'/29, l='MpServer', x=-51.97, y=96.50, z=5.50], ami['Gold Ingot'/947, l='MpServer', x=-15.25, y=69.00, z=-35.75], csz['QKuroiNekoQ'/541, l='MpServer', x=-43.85, y=82.88, z=19.55], csz['7197t115z6'/926, l='MpServer', x=1.56, y=69.00, z=-9.91], ama['Painting'/30, l='MpServer', x=-48.50, y=97.00, z=10.97], csz['ItsPeter_'/543, l='MpServer', x=-17.31, y=75.50, z=-35.56], csz['Mishana7u7_'/542, l='MpServer', x=-48.69, y=93.00, z=2.31], csz['killergirl101'/544, l='MpServer', x=49.97, y=71.13, z=2.88], csz['ItsPeter_'/543, l='MpServer', x=-51.44, y=92.00, z=8.88], csz['54wvt49kar'/927, l='MpServer', x=4.47, y=70.00, z=-7.56], csz['killergirl101'/544, l='MpServer', x=-48.50, y=92.00, z=6.50], csz['MasterGaming14'/545, l='MpServer', x=-44.59, y=84.06, z=21.63], csz['SuzieTwinkle'/546, l='MpServer', x=-44.33, y=82.06, z=16.26], csz['uyuoh'/547, l='MpServer', x=-45.91, y=85.81, z=14.97], csz['th8t_random_noob'/548, l='MpServer', x=-42.31, y=92.61, z=3.50], ami['Gold Ingot'/700, l='MpServer', x=3.13, y=63.11, z=3.06], ama['Painting'/43, l='MpServer', x=15.97, y=71.00, z=31.00], ami['Gold Ingot'/705, l='MpServer', x=6.13, y=69.00, z=-32.38], ami['Gold Ingot'/961, l='MpServer', x=-22.41, y=69.00, z=-8.72], ama['Painting'/44, l='MpServer', x=15.97, y=78.50, z=31.00], ama['Painting'/39, l='MpServer', x=5.50, y=70.50, z=-34.03], ami['Gold Ingot'/963, l='MpServer', x=0.53, y=69.00, z=-22.88], ama['Painting'/40, l='MpServer', x=5.50, y=71.50, z=-34.03], ama['Painting'/41, l='MpServer', x=7.50, y=70.50, z=-34.03], ama['Painting'/42, l='MpServer', x=7.50, y=71.50, z=-34.03], csz['TerrorCP'/550, l='MpServer', x=-47.41, y=81.06, z=15.56], csz['lich86'/551, l='MpServer', x=-44.93, y=92.00, z=8.25], ami['Gold Ingot'/968, l='MpServer', x=29.97, y=69.00, z=14.88], csz['burnie0118'/535, l='MpServer', x=-44.31, y=92.00, z=4.06], ami['Gold Ingot'/969, l='MpServer', x=30.56, y=69.00, z=-15.56], csz['Lion_Brine_Ninja'/537, l='MpServer', x=-46.78, y=81.06, z=15.69], ami['Gold Ingot'/970, l='MpServer', x=-16.78, y=69.00, z=-32.09], csz['iWolf_ShadOw'/538, l='MpServer', x=-47.13, y=90.03, z=13.59], csz['royalnight3'/539, l='MpServer', x=-44.50, y=84.22, z=20.81], csz['PePe7u7r'/540, l='MpServer', x=-51.72, y=92.00, z=9.69], csz['QKuroiNekoQ'/541, l='MpServer', x=-44.25, y=81.91, z=20.28], csz['Mishana7u7_'/542, l='MpServer', x=-48.72, y=93.00, z=2.28], ami['Gold Ingot'/719, l='MpServer', x=-31.69, y=79.00, z=7.84], csz['ItsPeter_'/543, l='MpServer', x=-51.41, y=92.00, z=8.81], csz['killergirl101'/544, l='MpServer', x=-48.50, y=92.00, z=6.50], csz['MasterGaming14'/545, l='MpServer', x=-44.72, y=84.06, z=21.69], csz['SuzieTwinkle'/546, l='MpServer', x=-44.16, y=82.81, z=17.28], csz['uyuoh'/547, l='MpServer', x=-45.50, y=82.13, z=15.06], csz['th8t_random_noob'/548, l='MpServer', x=-42.31, y=93.00, z=3.47], csz['burnie0118'/535, l='MpServer', x=-3.69, y=81.00, z=1.16], csz['Lion_Brine_Ninja'/537, l='MpServer', x=-13.38, y=64.91, z=-5.88], csz['iWolf_ShadOw'/538, l='MpServer', x=-17.10, y=76.94, z=-35.73], csz['royalnight3'/539, l='MpServer', x=44.03, y=70.00, z=10.31], csz['PePe7u7r'/540, l='MpServer', x=-20.13, y=78.00, z=-22.83], csz['QKuroiNekoQ'/541, l='MpServer', x=40.82, y=66.00, z=-2.39], csz['Mishana7u7_'/542, l='MpServer', x=-19.50, y=77.00, z=-35.69], csz['ItsPeter_'/543, l='MpServer', x=1.45, y=69.00, z=-8.97], csz['killergirl101'/544, l='MpServer', x=11.88, y=64.03, z=-12.71], csz['MasterGaming14'/545, l='MpServer', x=37.67, y=63.86, z=12.15], csz['SuzieTwinkle'/546, l='MpServer', x=44.08, y=68.00, z=5.01], csz['uyuoh'/547, l='MpServer', x=42.72, y=63.84, z=2.84], csz['th8t_random_noob'/548, l='MpServer', x=-22.66, y=69.00, z=-13.81], csz['TerrorCP'/550, l='MpServer', x=-47.63, y=81.06, z=15.69], csz['lich86'/551, l='MpServer', x=-44.53, y=92.00, z=7.69], csz['TerrorCP'/550, l='MpServer', x=12.88, y=66.97, z=16.44], csz['lich86'/551, l='MpServer', x=30.03, y=70.17, z=-26.06], ami['Gold Ingot'/758, l='MpServer', x=-42.69, y=63.46, z=0.34]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at cqv.a(SourceFile:427)
+	at cfi.b(SourceFile:1811)
+	at cwf.run(SourceFile:49)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.13
+	Operating System: Linux (amd64) version 4.15.3-300.fc27.x86_64
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 284194472 bytes (271 MB) / 633982976 bytes (604 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 5 total; -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	Launched Version: 1.13
+	LWJGL: 3.1.6 build 14
+	OpenGL: NO CONTEXT
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Probably not. Jar signature remains and client brand is untouched.
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz

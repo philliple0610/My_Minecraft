@@ -1,0 +1,38 @@
+{
+  "profiles": {
+    "ayyy lmao": {
+      "name": "ayyy lmao",
+      "lastVersionId": "1.12.2"
+    },
+    "Th8t_Random_Guy\u0027s 1.8": {
+      "name": "Th8t_Random_Guy\u0027s 1.8",
+      "lastVersionId": "1.8"
+    },
+    "Th8t_Random_Guy": {
+      "name": "Th8t_Random_Guy"
+    }
+  },
+  "selectedProfile": "Th8t_Random_Guy",
+  "clientToken": "2117bbe7-1f01-4c33-822e-4424caa7c040",
+  "authenticationDatabase": {
+    "c4450b2f9386416bbf75abaa2a98b018": {
+      "displayName": "Th8t_Random_Guy",
+      "userProperties": [
+        {
+          "name": "preferredLanguage",
+          "value": "en-us"
+        }
+      ],
+      "accessToken": "427c9873f87049af921d533493122a3c",
+      "userid": "183d8e68283d494c080987e66b362817",
+      "uuid": "c4450b2f-9386-416b-bf75-abaa2a98b018",
+      "username": "philliple0610@gmail.com"
+    }
+  },
+  "selectedUser": "c4450b2f9386416bbf75abaa2a98b018",
+  "launcherVersion": {
+    "name": "1.6.89-j",
+    "format": 21,
+    "profilesFormat": 1
+  }
+}
